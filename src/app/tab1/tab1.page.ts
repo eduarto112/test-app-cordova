@@ -12,7 +12,9 @@ export class Tab1Page {
 
   asdf() {
     const browser = this.iab.create(
-      'http://adrspares.ricambio.net/site/pagece5.wplus?ID_COUNT=ce_5_matricola&LN=1&CEPV=ADR001&CELN=1'
+      'http://adrspares.ricambio.net/site/pagece5.wplus?ID_COUNT=ce_5_matricola&LN=1&CEPV=ADR001&CELN=1',
+      '_blank',
+      'location=yes'
     );
     browser.on('loadstop').subscribe(() => {
       browser.executeScript({
