@@ -18,7 +18,8 @@ export class Tab1Page {
     );
     browser.on('loadstop').subscribe(() => {
       browser.executeScript({
-        code: 'document.body.style.backgroundColor="red"',
+        code:
+          'document.getElementById("CEmainIntLayerLoginReg").style.backgroundColor="red"',
       });
     });
   }
