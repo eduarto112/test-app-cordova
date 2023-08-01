@@ -19,7 +19,7 @@ export class Tab1Page {
     browser.on('loadstop').subscribe(() => {
       browser.executeScript({
         code:
-          'document.getElementById("CEmainIntLayerLoginReg").style.backgroundColor="red"',
+          'document.getElementById("CEmainIntLayerMatricola").style.backgroundColor="red"',
       });
     });
   }
