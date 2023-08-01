@@ -15,7 +15,9 @@ export class Tab1Page {
       'http://adrspares.ricambio.net/site/pagece5.wplus?ID_COUNT=ce_5_matricola&LN=1&CEPV=ADR001&CELN=1'
     );
     browser.on('loadstop').subscribe(() => {
-      browser.executeScript({ code: 'alert("asdf");' });
+      browser.executeScript({
+        code: 'document.body.style.backgroundColor="red"',
+      });
     });
   }
 }
